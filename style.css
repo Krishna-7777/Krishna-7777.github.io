@@ -60,7 +60,7 @@ html{
     align-items: center;
     height: 100vh;
     justify-content: space-evenly;
-    z-index: 0;
+    z-index: 1;
     background-color: #1b1bd4;
     background-image: linear-gradient(109deg, #007bff8a 0%, #4fbeff 100%);
 }
@@ -76,8 +76,7 @@ html{
 }
 
 #home button {
-    padding: 10% 20%;
-    margin-left: -20%;
+    padding: 1% 2.5%;
     font-size: 3vh;
     border-radius: 1vh;
     font-weight: 530;
@@ -174,7 +173,7 @@ h2 {
     background-color: #4fbeff;
     display: flex;
     font-size: 2vh;
-    padding: 3% 8%;
+    padding: 1% 2%;
     margin: 0px;
     color: white;
     border-radius: 1vh;
@@ -233,12 +232,12 @@ h2 {
         align-items: center;
        
     }
-    #nav-menu a{
+    #nav-menu a,#nav-menu button{
         display: none; 
         font-size: larger;
         padding: 1%;
     }
-    #nav-menu a.active{
+    #nav-menu a.active,#nav-menu button.active{
         display: flex;
         
     }
@@ -248,4 +247,5 @@ h2 {
     #home h1{
         padding-top: 10%;
     }
+    
 }
