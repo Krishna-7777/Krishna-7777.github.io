@@ -4,10 +4,11 @@
 black
 */
 
-html{
+html {
     scroll-behavior: smooth;
     scroll-padding: 7rem;
 }
+
 * {
     text-align: center;
     margin: 0px;
@@ -101,7 +102,8 @@ html{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
 }
-#projects h2{
+
+#projects h2 {
     padding: 0%;
 }
 
@@ -180,37 +182,61 @@ h2 {
     gap: 4px;
     font-weight: 400;
 }
-#ham{
+
+#ham {
     display: none;
 }
+
+/* #chkout {
+    text-decoration: unset;
+    color: unset;
+    border: 2px solid #4fbeff;
+    padding: 0% 2%;
+    border-radius: 20px;
+}
+
+#cbase{
+    text-decoration: unset;
+    color: unset;
+    border: 2px solid #4fbeff;
+    padding: 0% 2%;
+    border-radius: 20px;
+} */
+
 @media (max-width:1560px) {
     #github-stuff {
         flex-direction: column;
     }
-    #github-stuff img{
+
+    #github-stuff img {
         width: 90%;
         margin: 1.5% 5%;
     }
 }
+
 @media (max-width:800px) {
     #projects>div {
         display: flex;
         flex-direction: column;
     }
+
     #nav-menu a {
         font-size: 16px;
     }
 }
+
 @media (max-width:850px) and (min-width:371px) {
     .box-container {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         text-align: center;
     }
-    .box-container div:nth-last-child(1){
+
+    .box-container div:nth-last-child(1) {
         display: none;
     }
 }
+
 @media (max-width:370px) {
     .box-container {
         display: grid;
@@ -218,8 +244,9 @@ h2 {
         text-align: center;
     }
 }
-@media (max-width:600px){
-    #ham{
+
+@media (max-width:600px) {
+    #ham {
         display: unset;
         color: white;
         position: absolute;
@@ -227,25 +254,32 @@ h2 {
         right: 20px;
         font-size: 25px;
     }
-    #nav-menu{
+
+    #nav-menu {
         flex-direction: column;
         align-items: center;
-       
+
     }
-    #nav-menu a,#nav-menu button{
-        display: none; 
+
+    #nav-menu a,
+    #nav-menu button {
+        display: none;
         font-size: larger;
         padding: 1%;
     }
-    #nav-menu a.active,#nav-menu button.active{
+
+    #nav-menu a.active,
+    #nav-menu button.active {
         display: flex;
-        
+
     }
-    #nav-menu{
+
+    #nav-menu {
         padding-top: 35px;
     }
-    #home h1{
+
+    #home h1 {
         padding-top: 10%;
     }
-    
+
 }
