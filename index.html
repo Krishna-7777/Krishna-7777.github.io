@@ -7,99 +7,98 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Krishna Chhabra</title>
     <script src="https://kit.fontawesome.com/5598f0038c.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
-<link rel="stylesheet" href="./style.css">
 
 <body>
     <div id="background">
-
-
-        <div id="nav-menu">
+        <div id="nav-menu"  data-aos="zoom-in">
             <i class="fa-solid fa-bars" id="ham"></i>
             <a href="#home" class="nav-link home">Home</a>
             <a href="#about" class="nav-link about">About Me</a>
             <a href="#skills" class="nav-link skills">Skills</a>
             <a href="#projects" class="nav-link projects">Projects</a>
             <a href="#contact" class="nav-link contact">Contact</a>
-            <button id="resume-button-1" class="nav-link resume" onclick="resume()">
-                <a href="Krishna-Chhabra-Resume.pdf" id="resume-link-1"  download="Krishna-Chhabra-Resume.pdf">
-                  Resume <i class="fa-solid fa-file-arrow-down"></i>
+            <button id="resume-button-1" class=" resume button" onclick="resume()">
+                <a href="./assets/Krishna-Chhabra-Resume.pdf" id="resume-link-1" download="Krishna-Chhabra-Resume.pdf">
+                    Resume <i class="fa-solid fa-file-arrow-down"></i>
                 </a> </i>
-               </button>
+            </button>
         </div>
     </div>
-    <div id="home">
-        <h1 >Krishna Chhabra</h1>
-        <h2>Full-Stack Web Developer</h2>
-        <button onclick="resume()"  id="resume-button-2" >
-            <a id="resume-link-2" href="Krishna-Chhabra-Resume.pdf" target="_blank" download="Krishna-Chhabra-Resume.pdf">
-           Resume </a><i class="fa-solid fa-file-arrow-down"></i>
-       </button>
+
+    <div id="home" >
+
+            <h1 data-aos="zoom-in-down">Krishna Chhabra</h1>
+            <h2 data-aos="zoom-in-down">Full-Stack Web Developer</h2>
+            <button data-aos="zoom-in-down" id="resume-button-1" class="button" onclick="resume()">
+                <a href="./assets/Krishna-Chhabra-Resume.pdf" id="resume-link-1" download="Krishna-Chhabra-Resume.pdf">
+                    Resume <i class="fa-solid fa-file-arrow-down"></i>
+                </a> </i>
+            </button>
     </div>
 
-    <section id="about" class="about section">
-        <h2  id="user-detail-name">About Me</h2>
-        <img src="./profile.png" alt="" class="home-img"> 
-        <!-- <h1 >I'm Krishna Chhabra</h1> -->
-        <p id="user-detail-intro">A self-motivated, hard-working and ambitious Web Developer with proficiency in
+    <section id="about" class="about section" data-aos="zoom-in">
+        <h2 data-aos="zoom-in" id="user-detail-name">About Me</h2>
+        <img data-aos="zoom-in" src="./assets/profile.png" alt="" class="home-img">
+        <p data-aos="zoom-in" id="user-detail-intro">A self-motivated, hard-working and ambitious Web Developer with
+            proficiency in
             JavaScript, Node.js, Express.js, MongoDB, Mongoose, HTML and CSS. Problem-solving mindset and the ability to
             perform well in collaboration.</p><br>
     </section>
 
     <div id="skills">
-        <h2 class="heading">Tech Stacks and Tools</h2>
+        <h2 data-aos="zoom-in" class="heading">Tech Stacks and Tools</h2>
         <div class="box-container">
-            <!-- <div class="main"> -->
-            <div class="skills-card">
+            <div data-aos="zoom-in" class="skills-card">
                 <img class="skills-card-img"
                     src="https://imgs.search.brave.com/ONyyr8kaz7jLCbei6YDUhVPY5NtLtY93qGBA5IoKkew/rs:fit:800:800:1/g:ce/aHR0cHM6Ly9wNy5o/aWNsaXBhcnQuY29t/L3ByZXZpZXcvMzA2/LzM3LzE2Ny9ub2Rl/LWpzLWphdmFzY3Jp/cHQtd2ViLWFwcGxp/Y2F0aW9uLWV4cHJl/c3MtanMtY29tcHV0/ZXItc29mdHdhcmUt/b3RoZXJzLmpwZw"
                     alt="" />
                 <h3 class="skills-card-name">Node.js</h3>
             </div>
-            <div class="skills-card">
+            <div data-aos="zoom-in" class="skills-card">
                 <img class="skills-card-img"
                     src="https://imgs.search.brave.com/3zyf8MwTySSV1u97JOmnQ9kOm9MQxKJTNHDQn9153Dc/rs:fit:750:750:1/g:ce/aHR0cHM6Ly9yZXMu/Y2xvdWRpbmFyeS5j/b20vbHdnYXRzYnkv/Zl9hdXRvL3d3dy91/cGxvYWRzLzIwMjAv/MTEvbW9uZ29kYi5w/bmc"
                     alt="" />
                 <h3 class="skills-card-name">MongoDB</h3>
             </div>
-            <div class="skills-card">
-                <img class="skills-card-img"
-                    src="https://imgs.search.brave.com/OJqj0MvCdchdbDCwbvju-sDde9bdJ-iE_znYVVvlbaY/rs:fit:900:900:1/g:ce/aHR0cHM6Ly9saWJy/YXJ5Lmtpc3NjbGlw/YXJ0LmNvbS8yMDE4/MTEyMy9veXEva2lz/c2NsaXBhcnQtc3Fs/LWRiLWNsaXBhcnQt/bWljcm9zb2Z0LWF6/dXJlLXNxbC1kYXRh/YmFzZS1kOGZlODZh/ZmQ3N2VlMTI0Lmpw/Zw"
-                    alt="" />
-                <h3 class="skills-card-name">SQL</h3>
+            <div data-aos="zoom-in" class="skills-card">
+                <img class="skills-card-img" src="./assets/MySQL.png" alt="" />
+                <h3 class="skills-card-name">MySQL</h3>
             </div>
-            <div class="skills-card">
+            <div data-aos="zoom-in" class="skills-card">
                 <img class="skills-card-img"
                     src="https://imgs.search.brave.com/SL3i7a57uH3nMKgWOutVaVYQ1RCPqq4rTbP6J33xfAM/rs:fit:750:1000:1/g:ce/aHR0cHM6Ly9paDEu/cmVkYnViYmxlLm5l/dC9pbWFnZS40Mzg5/MDgyNDQuNjE0NC9i/ZyxmOGY4ZjgtZmxh/dCw3NTB4LDA3NSxm/LXBhZCw3NTB4MTAw/MCxmOGY4ZjgudTIu/anBn"
                     alt="" />
                 <h3 class="skills-card-name">Express.js</h3>
             </div>
-            <div class="skills-card">
+            <div data-aos="zoom-in" class="skills-card">
                 <img class="skills-card-img"
                     src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png" alt="" />
                 <h3 class="skills-card-name">Github</h3>
             </div>
-            <div class="skills-card">
+            <div data-aos="zoom-in" class="skills-card">
                 <img class="skills-card-img" src="https://chiranjeev-thapliyal.vercel.app/svg/amazon-web-services.svg"
                     alt="" />
                 <h3 class="skills-card-name">AWS</h3>
             </div>
-            <div class="skills-card">
+            <div data-aos="zoom-in" class="skills-card">
                 <img class="skills-card-img"
                     src="https://portfolio-saravanakumarjn.vercel.app/static/media/html_5.e7638e36.svg" alt="" />
                 <h3 class="skills-card-name">HTML</h3>
             </div>
-            <div class="skills-card">
+            <div data-aos="zoom-in" class="skills-card">
                 <img class="skills-card-img"
                     src="https://portfolio-saravanakumarjn.vercel.app/static/media/css_3.e7a9de36.svg" alt="" />
                 <h3 class="skills-card-name">CSS3</h3>
             </div>
-            <div class="skills-card">
+            <div data-aos="zoom-in" class="skills-card">
                 <img class="skills-card-img"
                     src="https://portfolio-saravanakumarjn.vercel.app/static/media/javascript.fd46ca41.svg" alt="" />
                 <h3 class="skills-card-name">JavaScript</h3>
             </div>
-            <div class="skills-card">
+            <div data-aos="zoom-in" class="skills-card">
                 <img class="skills-card-img"
                     src="https://media.istockphoto.com/vectors/flowchart-icon-on-a-black-background-vector-id488916446?k=20&m=488916446&s=612x612&w=0&h=OQeEPHSxRq_wKF4bF_crFzzcTeK0aqQBaevYYIGHTIw="
                     alt="" />
@@ -108,106 +107,163 @@
             <!-- </div> -->
         </div>
     </div>
+
     <div id="projects">
-    <h2 class="heading" id="projecth">My Projects</h1>
-        <div>
-        <div class="project-card">
-            <img src="https://user-images.githubusercontent.com/112761880/229686303-7dbee180-48d1-4ec7-9cbb-c0a09802c82b.jpg" alt=""><br><br>
-            <h3 class="project-title">Legal Assist</h3><br>
-            <p class="project-description">A platform designed to facilitate scheduling and management of legal appointments. It is system that helps lawyers and clients in connecting to each other. It was a Collaborative Project built by team of 4 members in 4 days.</p><br>
-            <p class="project-tech-stack">HTML, CSS, JavaScript, Node.js and various NPM packages
-            </p><br>
-            <button>
-             <a target="_blank" href="https://github.com/Krishna-7777/crabby-desk-491"
-                class="project-github-link" id="cbase">Code Base</a>
-           <button>
-            <a target="_blank" href="https://legalassist.netlify.app/" class="project-deployed-link" id="chkout">Live Preview</a></button>
-        </div>
-        <div class="project-card">
-            <img src="https://github.com/Krishna-7777/fertile-butter-5929/raw/main/screenshots/home.PNG" alt=""><br><br>
-            <h3 class="project-title">Fash.com</h3><br>
-            <p class="project-description">A clone of a fashion e-commerce website, Myntra.com. It was a individual project made in aspan of 4 days.</p><br>
-            <p class="project-tech-stack">HTML, CSS, JavaScript, Node.js and various NPM packages
-            </p><br>
-            <button>
-            <a target="_blank" href="https://github.com/Krishna-7777/fertile-butter-5929"
-                class="project-github-link" id="cbase">Code Base</a><button>
-            <a target="_blank" href="https://fash-com.netlify.app/" class="project-deployed-link" id="chkout">Live Preview</a></button>
-        </div>
-        <div class="project-card">
-            <img src="https://raw.githubusercontent.com/vishal-girhepunje/affectionate-zinc-1194/main/images/home.PNG" alt=""><br><br>
-            <h3 class="project-title">PoshStrom - Nordstrom Clone</h3><br>
-            <p class="project-description">Nordstorm is an E-Commerce website that offers a wide variety of designer clothing and footwear, cosmetics, and home goods. It was a Collaborative Project built by team of 5 members in 4 days. </p><br>
-            <p class="project-tech-stack">HTML, CSS, JavaScript and json-server.
-            </p><br>
-            <button>
-            <a target="_blank" href="https://github.com/vishal-girhepunje/affectionate-zinc-1194"
-                class="project-github-link" id="cbase">Code Base</a>
-                <button>
-            <a target="_blank" href="https://elegant-lebkuchen-d12793.netlify.app/index.html" class="project-deployed-link" id="chkout">Live Preview</a></button>
-        </div>
-        <div class="project-card">
-            <img src="https://raw.githubusercontent.com/Krishna-7777/rabid-flower-3002/main/Screenshots/home.PNG" alt=""><br><br>
-            <h3 class="project-title">Trippy - TripAdvisor Clone</h3><br>
-            <p class="project-description">TripAdvisor is a popular travel platform that allows users to search for hotels, restaurants, and attractions, read and write reviews, and book travel accommodations. It was individual project made in a span of 4 days.</p><br>
-            <p class="project-tech-stack">HTML, CSS and JavaScript
-            </p><br>
-            <button>
-            <a target="_blank" href="https://github.com/Krishna-7777/rabid-flower-3002"
-                class="project-github-link" id="cbase">Code Base</a><button>
-            <a target="_blank" href="https://fanciful-khapse-29f926.netlify.app/" class="project-deployed-link" id="chkout">Live Preview</a></button>
-        </div>
-        </div></div>
-    
-    
-
-    <h2 class="heading">Github Stats</h2>
-    <div class="react-activity-calendar">
-        <p align="center"> <img align="center" 
-                src="https://ghchart.rshah.org/00aeff/krishna-7777" alt="2016rshah's Github chart" /></p><br>
+        <h2 data-aos="zoom-in" class="heading" id="projecth">My Projects</h1>
+            <div>
+                <div class="project-card">
+                    <img data-aos="zoom-in-left"
+                        src="https://github.com/user-attachments/assets/8006fb0e-ee5b-4217-9b54-37441b74973b"
+                        alt="Project screenshot"><br><br>
+                    <h3 data-aos="zoom-in-left" class="project-title">Puzzler - A Image Puzzle Maker</h3><br>
+                    <p data-aos="zoom-in-left" class="project-description">
+                        Images can be turned into puzzle. Search, Upload, Enter Link of the image and make it a puzzle.
+                    </p><br>
+                    <p data-aos="zoom-in-left" class="project-tech-stack">HTML, CSS and JavaScript
+                    </p><br>
+                    <button data-aos="zoom-in-left" data-aos="zoom-in-up">
+                        <a target="_blank" href="https://github.com/Krishna-7777/puzzler"
+                            class="project-github-link" id="cbase">Code Base</a>
+                        <button data-aos="zoom-in-left">
+                            <a target="_blank" href="https://kuzzler.netlify.app/"
+                                class="project-deployed-link" id="chkout">Live Preview</a></button>
+                </div>
+                <div class="project-card">
+                    <img data-aos="zoom-in-right"
+                        src="https://user-images.githubusercontent.com/112761880/229686303-7dbee180-48d1-4ec7-9cbb-c0a09802c82b.jpg"
+                        alt=""><br><br>
+                    <h3 data-aos="zoom-in-right" class="project-title">Legal Assist</h3><br>
+                    <p data-aos="zoom-in-right" class="project-description">A platform designed to facilitate scheduling
+                        and management of legal
+                        appointments. It is system that helps lawyers and clients in connecting to each other. It was a
+                        Collaborative Project built by team of 4 members in 4 days.</p><br>
+                    <p data-aos="zoom-in-right" class="project-tech-stack">HTML, CSS, JavaScript, Node.js and various
+                        NPM packages
+                    </p><br>
+                    <button data-aos="zoom-in-right">
+                        <a target="_blank" href="https://github.com/Krishna-7777/crabby-desk-491"
+                            class="project-github-link" id="cbase">Code Base</a>
+                        <button data-aos="zoom-in-right">
+                            <a target="_blank" href="https://legalassist.netlify.app/" class="project-deployed-link"
+                                id="chkout">Live Preview</a></button>
+                </div>
+                <div class="project-card">
+                    <img data-aos="zoom-in-left"
+                        src="https://github.com/Krishna-7777/fertile-butter-5929/raw/main/screenshots/home.PNG"
+                        alt=""><br><br>
+                    <h3 data-aos="zoom-in-left" class="project-title">Fash.com</h3><br>
+                    <p data-aos="zoom-in-left" class="project-description">A clone of a fashion e-commerce website,
+                        Myntra.com. It was a
+                        individual project made in aspan of 4 days.</p><br>
+                    <p data-aos="zoom-in-left" class="project-tech-stack">HTML, CSS, JavaScript, Node.js and various NPM
+                        packages
+                    </p><br>
+                    <button data-aos="zoom-in-left">
+                        <a target="_blank" href="https://github.com/Krishna-7777/fertile-butter-5929"
+                            class="project-github-link" id="cbase">Code Base</a>
+                        <button data-aos="zoom-in-left">
+                            <a target="_blank" href="https://fash-com.netlify.app/" class="project-deployed-link"
+                                id="chkout">Live Preview</a></button>
+                </div>
+                <div class="project-card">
+                    <img data-aos="zoom-in-right"
+                        src="https://raw.githubusercontent.com/vishal-girhepunje/affectionate-zinc-1194/main/images/home.PNG"
+                        alt=""><br><br>
+                    <h3 data-aos="zoom-in-right" class="project-title">PoshStrom - Nordstrom Clone</h3><br>
+                    <p data-aos="zoom-in-right" class="project-description">Nordstorm is an E-Commerce website that
+                        offers a wide variety of
+                        designer clothing and footwear, cosmetics, and home goods. It was a Collaborative Project built
+                        by team of 5 members in 4 days. </p><br>
+                    <p data-aos="zoom-in-right" class="project-tech-stack">HTML, CSS, JavaScript and json-server.
+                    </p><br>
+                    <button data-aos="zoom-in-right" data-aos="zoom-in-up">
+                        <a target="_blank" href="https://github.com/Krishna-7777/Nordstrom-Clone"
+                            class="project-github-link" id="cbase">Code Base</a>
+                        <button data-aos="zoom-in-right">
+                            <a target="_blank" href="https://elegant-lebkuchen-d12793.netlify.app/index.html"
+                                class="project-deployed-link" id="chkout">Live Preview</a></button>
+                </div>
+                <!-- <div class="project-card">
+                    <img data-aos="zoom-in-left"
+                        src="https://raw.githubusercontent.com/Krishna-7777/rabid-flower-3002/main/Screenshots/home.PNG"
+                        alt=""><br><br>
+                    <h3 data-aos="zoom-in-left" class="project-title">Trippy - TripAdvisor Clone</h3><br>
+                    <p data-aos="zoom-in-left" class="project-description">TripAdvisor is a popular travel platform that
+                        allows users to search
+                        for hotels, restaurants, and attractions, read and write reviews, and book travel
+                        accommodations. It was individual project made in a span of 4 days.</p><br>
+                    <p data-aos="zoom-in-left" class="project-tech-stack">HTML, CSS and JavaScript
+                    </p><br>
+                    <button data-aos="zoom-in-left" data-aos="zoom-in-up">
+                        <a target="_blank" href="https://github.com/Krishna-7777/rabid-flower-3002"
+                            class="project-github-link" id="cbase">Code Base</a>
+                        <button data-aos="zoom-in-left">
+                            <a target="_blank" href="https://fanciful-khapse-29f926.netlify.app/"
+                                class="project-deployed-link" id="chkout">Live Preview</a></button>
+                </div> -->
+            </div>
     </div>
-    <div class="streaks" id="github-stuff">
-        <div >
-            <img id="github-streak-stats" src="https://github-readme-streak-stats.herokuapp.com?user=Krishna-7777&background=FFFFFF&ring=2982FF&fire=2982FF&currStreakNum=2982FF&currStreakLabel=2982FF"/>
+
+
+
+    <h2 data-aos="zoom-in" class="heading">Github Stats</h2>
+    <div data-aos="zoom-in" class="react-activity-calendar">
+        <p align="center"> <img align="center" src="https://ghchart.rshah.org/00aeff/krishna-7777"
+                alt="2016rshah's Github chart" /></p><br>
+    </div>
+    <div data-aos="zoom-in" class="streaks" id="github-stuff">
+        <div data-aos="zoom-in">
+            <img id="github-streak-stats"
+                src="https://github-readme-streak-stats.herokuapp.com?user=Krishna-7777&background=FFFFFF&ring=2982FF&fire=2982FF&currStreakNum=2982FF&currStreakLabel=2982FF" />
         </div>
-        <div >
-            <img id="github-top-langs" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Krishna-7777&layout=compact"/>
+        <div data-aos="zoom-in">
+            <img id="github-top-langs"
+                src="https://github-readme-stats.vercel.app/api/top-langs/?username=Krishna-7777&layout=compact" />
         </div>
-        <div >
-            <img id="github-stats-card" src="https://github-readme-stats.vercel.app/api?username=Krishna-7777&show_icons=true&theme=transparent"/>
+        <div data-aos="zoom-in">
+            <img id="github-stats-card"
+                src="https://github-readme-stats.vercel.app/api?username=Krishna-7777&show_icons=true&theme=transparent" />
         </div>
     </div>
-<div id="contact">
-        <h2 class="heading">Contact Me</h2>
-        <p id="contact-phone">Contact : +91 9891912498</p><br>
-        <p id="contact-email">Mail : krishna.chhabra.365@gmail.com</p><br>
-        <a target="_blank" href="https://github.com/Krishna-7777" id="contact-github"><button>GitHub <i class="fa-brands fa-github"></i></button></a>
-        <a target="_blank" href="https://www.linkedin.com/in/-krishna-chhabra/" id="contact-linkedin"><button>LinkedIn <i class="fa-brands fa-linkedin"></i></button></a>
+    <div id="contact">
+        <div  data-aos="zoom-in">
+            <h2 class="heading">Contact Me</h2>
+            <p id="contact-phone">Contact : +91 9891912498</p><br>
+            <p id="contact-email">Mail : krishna.chhabra.365@gmail.com</p><br>
+            <a target="_blank" href="https://github.com/Krishna-7777" id="contact-github"><button>GitHub <i
+                        class="fa-brands fa-github"></i></button></a>
+            <a target="_blank" href="https://www.linkedin.com/in/-krishna-chhabra/"
+                id="contact-linkedin"><button>LinkedIn
+                    <i class="fa-brands fa-linkedin"></i></button></a>
+        </div>
     </div>
-
-
-
 </body>
 
 </html>
 <script>
-    function resume(){
-  window.open("https://drive.google.com/file/d/1Es0-sMzus0zE1o_HhQLoIhi3w6I_naSF/view?usp=share_link","_blank")
-}
-    let arr=document.querySelectorAll("#nav-menu a");
-    document.getElementById("ham").addEventListener('click',()=>{
-        for(let i of arr){
+
+    function resume() {
+        window.open("./assets/Krishna-Chhabra-Resume.pdf", "_blank")
+    }
+    let arr = document.querySelectorAll("#nav-menu a");
+    document.getElementById("ham").addEventListener('click', () => {
+        for (let i of arr) {
             i.classList.toggle('active')
         }
         document.querySelector("#nav-menu button").classList.toggle("active")
-        document.querySelector("#home h1").setAttribute('style','padding-top:20%')
+        document.querySelector("#home h1").setAttribute('style', 'padding-top:20%')
     })
-    for(let i of arr){
-            i.addEventListener('click',()=>{
-                for(let i of arr){
-            i.classList.toggle('active')
-        }
-            })
-        }
+    for (let i of arr) {
+        i.addEventListener('click', () => {
+            for (let i of arr) {
+                i.classList.toggle('active')
+            }
+        })
+    }
 
+</script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+    AOS.init();
 </script>

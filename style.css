@@ -6,13 +6,15 @@ black
 
 html {
     scroll-behavior: smooth;
-    scroll-padding: 7rem;
+    /* scroll-padding: 7rem; */
 }
 
 * {
     text-align: center;
     margin: 0px;
+    padding: 0px;
     font-family: Arial, Helvetica, sans-serif;
+    overflow-x: hidden;
 }
 
 #nav-menu {
@@ -51,6 +53,7 @@ html {
     width: 100%;
     padding: 1%;
     position: fixed;
+    z-index: 2;
     box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
 }
 
@@ -78,12 +81,8 @@ html {
 
 #home button {
     padding: 1% 2.5%;
-    font-size: 3vh;
-    border-radius: 1vh;
+    font-size: 4vh;
     font-weight: 530;
-    background-color: #4fbeff;
-    display: flex;
-    gap: 10px;
 }
 
 #user-detail-intro {
@@ -111,6 +110,11 @@ html {
     margin: 2%;
     padding: 1%;
     max-width: 100%;
+}
+
+#projects button {
+    margin-left: 5px;
+    margin-right: 5px;
 }
 
 .project-card img {
@@ -157,59 +161,24 @@ h2 {
     color: white;
 }
 
-#contact button {
-    padding: 0.5%;
-    margin: 1%;
-    font-size: 3vh;
-    border-radius: 1vh;
-    font-weight: 530;
-    background-color: #4fbeff;
-    gap: 10px;
-}
-
 .box-container {
     margin-bottom: 1%;
-}
-
-#nav-menu button {
-    background-color: #4fbeff;
-    display: flex;
-    font-size: 2vh;
-    padding: 1% 2%;
-    margin: 0px;
-    color: white;
-    border-radius: 1vh;
-    gap: 4px;
-    font-weight: 400;
 }
 
 #ham {
     display: none;
 }
 
-.project-card a{
+.project-card a {
     text-decoration: unset;
     color: unset;
 }
 
-.project-card button{
-     border: 2px solid #4fbeff; 
-    padding: 1% 2%;
-    font-size: 18px;
-    border-radius: 20px;
-    margin: 0.5%;
-    background-color: white;
-}
-
-.project-card button:hover{
-     background-color:#4fbeff54;
-}
-
-#projecth{
+#projecth {
     margin-top: 4%;
 }
 
-.project-tech-stack{
+.project-tech-stack {
     font-weight: 600;
     font-size: 15px;
 }
@@ -262,7 +231,7 @@ h2 {
         color: white;
         position: absolute;
         top: 10px;
-        right: 20px;
+        left: 20px;
         font-size: 25px;
     }
 
@@ -276,7 +245,7 @@ h2 {
     #nav-menu button {
         display: none;
         font-size: larger;
-        padding: 1%;
+        padding: 1.5% 2%;
     }
 
     #nav-menu a.active,
@@ -293,4 +262,89 @@ h2 {
         padding-top: 10%;
     }
 
+}
+
+button a {
+    text-decoration: none;
+    color: white
+}
+
+button {
+    overflow: unset;
+    text-decoration: none;
+    align-items: center;
+    background-color: #3876fb;
+    background-image: linear-gradient(30deg, #007bff60 0%, rgb(55, 182, 255) 100%);
+    background-position: 0 0;
+    border: 2px solid #0081dd;
+    border-radius: 11px;
+    box-sizing: border-box;
+    color: white;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 33.4929px;
+    list-style: outside url(https://www.smashingmagazine.com/images/bullet.svg) none;
+    padding: 2px 16px;
+    text-align: left;
+    text-decoration: none;
+    text-shadow: none;
+    text-underline-offset: 1px;
+    transition: border .2s ease-in-out, box-shadow .2s ease-in-out;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+    white-space: nowrap;
+    word-break: break-word;
+}
+
+button:active,
+button:hover,
+button:focus {
+    outline: 0;
+}
+
+
+button:active {
+    background-color: #1472ff;
+    box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px 0 inset;
+    color: #FFFFFF;
+}
+
+button:hover {
+    background-color: #31baf4;
+    border-color: #2b7ffd;
+}
+
+button:active:hover,
+button:focus:hover,
+button:focus {
+    background-color: #31baf4;
+    box-shadow: rgba(0, 0, 0, 0.12) 0 1px 3px 0 inset;
+    color: #FFFFFF;
+}
+
+.nav-link {
+    padding-left: 6px;
+    padding-right: 6px;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    padding-left: 0px;
+    padding-right: 0px;
+    font-size: 30px !important;
+}
+
+.project-card img {
+    transition: all 0.3s ease-in-out !important;
+}
+
+.project-card img:hover {
+    max-width: 104%;
+    margin-left: -2%;
+}
+
+i{
+    overflow: hidden;
 }
