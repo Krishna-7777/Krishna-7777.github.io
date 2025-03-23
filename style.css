@@ -4,8 +4,18 @@
 black
 */
 
+@font-face {
+    font-family: 'Inknut_Antiqua';
+    src: url('./lib/Inknut_Antiqua/InknutAntiqua-Light.ttf') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 html {
     scroll-behavior: smooth;
+    font-family: Inknut_Antiqua, serif;
+    line-height: 2;
+    overflow-y: scroll;
     /* scroll-padding: 7rem; */
 }
 
@@ -13,14 +23,15 @@ html {
     text-align: center;
     margin: 0px;
     padding: 0px;
-    font-family: Arial, Helvetica, sans-serif;
-    overflow-x: hidden;
+    overflow: hidden;
 }
 
 #nav-menu {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
+    gap: 1%;
+    width: 98%;
 }
 
 .box-container {
@@ -35,6 +46,7 @@ html {
 
 .react-activity-calendar img {
     width: 90%;
+    height: unset;
 }
 
 #github-stuff {
@@ -44,17 +56,31 @@ html {
 }
 
 #github-stuff img {
-    max-height: 200px;
+    height: 200px;
 }
 
 #background {
-    background-color: #1b1bd4;
+    background-color: #0f0f6a2b;
+    /* 
     background-image: linear-gradient(109deg, #007bff8a 0%, rgb(55, 182, 255) 100%);
     width: 100%;
     padding: 1%;
     position: fixed;
     z-index: 2;
-    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px; */
+    backdrop-filter: url('#glass');
+    position: fixed;
+    top: 0px;
+    padding: 10px;
+    width: 100%;
+    z-index: 100;
+    display: grid;
+    /* color: white; */
+    box-shadow: 0px 10px 15px 10px rgb(0 0 0 / 5%);
+    text-shadow:
+        .04em .06em .08em #0008,
+        .1em .14em .16em #0006;
+
 }
 
 #home {
@@ -70,23 +96,24 @@ html {
 }
 
 #home h1 {
-    font-size: 8vw;
+    font-size: 7vw;
     color: white;
 }
 
 #home h2 {
-    font-size: 5vw;
+    font-size: 4vw;
     color: white;
 }
 
 #home button {
     padding: 1% 2.5%;
-    font-size: 4vh;
+    font-size: large;
     font-weight: 530;
 }
 
-#user-detail-intro {
-    font-size: larger;
+#user-detail-intro p {
+    font-size: large;
+    text-align: justify;
 }
 
 .heading {
@@ -123,13 +150,11 @@ html {
 
 #nav-menu a {
     text-decoration: none;
-    font-size: 25px;
+    font-size: large;
     padding: none;
     color: white;
     font-weight: 400;
 }
-
-
 
 #about {
     margin-top: 2%;
@@ -139,7 +164,7 @@ html {
 }
 
 h2 {
-    font-size: 4vh;
+    font-size: 2em;
 }
 
 #about img {
@@ -154,7 +179,7 @@ h2 {
     background-color: #1b1bd4;
     background-image: linear-gradient(109deg, #007bff8a 0%, #4fbeff 100%);
     color: white;
-    font-size: 2.5vh;
+    font-size: 1em;
 }
 
 #contact h2 {
@@ -180,10 +205,10 @@ h2 {
 
 .project-tech-stack {
     font-weight: 600;
-    font-size: 15px;
+    font-size: medium;
 }
 
-@media (max-width:1560px) {
+@media (max-width:1400px) {
     #github-stuff {
         flex-direction: column;
     }
@@ -191,13 +216,14 @@ h2 {
     #github-stuff img {
         width: 90%;
         margin: 1.5% 5%;
+        /* height: unset; */
     }
 }
 
 @media (max-width:800px) {
     #projects>div {
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
     }
 
     #nav-menu a {
@@ -223,6 +249,12 @@ h2 {
         grid-template-columns: repeat(2, 1fr);
         text-align: center;
     }
+    #about p{
+        font-size: medium;
+    }
+    #home h2{
+        font-size: larger;
+    }
 }
 
 @media (max-width:600px) {
@@ -244,14 +276,14 @@ h2 {
     #nav-menu a,
     #nav-menu button {
         display: none;
-        font-size: larger;
-        padding: 1.5% 2%;
+        font-size: large;
     }
 
     #nav-menu a.active,
     #nav-menu button.active {
         display: flex;
-
+        justify-content: center;
+        align-items: center;
     }
 
     #nav-menu {
@@ -296,6 +328,9 @@ button {
     touch-action: manipulation;
     white-space: nowrap;
     word-break: break-word;
+    display: inline-flex;
+    gap: 5px;
+    align-items: center;
 }
 
 button:active,
@@ -324,16 +359,32 @@ button:focus {
     color: #FFFFFF;
 }
 
-.nav-link {
-    padding-left: 6px;
-    padding-right: 6px;
+.nav-link{
     transition: all 0.3s ease-in-out;
+    position: relative;
+    text-decoration: none;
+    display: inline-block;
+    margin-bottom: -2px;
 }
 
 .nav-link:hover {
-    padding-left: 0px;
-    padding-right: 0px;
-    font-size: 30px !important;
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.121);
+}
+
+
+.nav-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: currentColor;
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
 }
 
 .project-card img {
@@ -345,6 +396,6 @@ button:focus {
     margin-left: -2%;
 }
 
-i{
+i {
     overflow: hidden;
 }
